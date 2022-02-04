@@ -1,10 +1,10 @@
-### This module creates akey pair
+### This module creates a key pair
 
 #### Please copy past below code
 
 ```
 module "dev" {
-    source = "../" #one step back
+    source = "metinbor/keypair/aws"
     region = "us-east-1"
     key_name_prefix = "dev-"
     key_location = "~/.ssh/id_rsa.pub"
